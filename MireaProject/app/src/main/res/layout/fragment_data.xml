@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Интересные игры в которые можно позалипать вечерком"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Игра 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/game1_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Genshin Impact"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/game1_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="гача бродилка"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/game1_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Год выхода: 2020"
+            android:textStyle="italic"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/game1_platform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Платформа: PC, Xbox, Android"
+            android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+
+    <!-- Игра 2 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/game2_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nier Automata"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/game2_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/game2_title"
+            android:text="гача бродилка2"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/game2_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/game2_description"
+            android:text="Год выхода: 2017"
+            android:textStyle="italic"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/game2_platform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/game2_year"
+            android:text="Платформа: Xbox, PC"
+            android:layout_marginTop="8dp"/>
+    </RelativeLayout>
+
+    <!-- Игра 3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/game3_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Warface"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/game3_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="шутер"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/game3_year"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Год выхода: 2022"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/game3_platform"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Платформа: PC"
+                android:textStyle="italic"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
