@@ -16,13 +16,5 @@
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_slideshow" />
-        <item
-            android:id="@+id/datafragment"
-            android:icon="@drawable/baseline_info_24"
-            android:title="Инфа о играх" />
-        <item
-            android:id="@+id/webviewfragment"
-            android:icon="@drawable/baseline_4g_plus_mobiledata_24"
-            android:title="Браузер" />
     </group>
 </menu>
