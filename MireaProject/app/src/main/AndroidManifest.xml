@@ -1,27 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ru.com.hristov.mireaproject">
+
+    <!-- Разрешение на использование интернета -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Разрешение на использование камеры -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- Разрешение на запись аудио (использование микрофона) -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- Разрешение на доступ к внешнему хранилищу -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Указание на использование аппаратной камеры -->
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+
+
 
     <application
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MireaProject"
-        tools:targetApi="31">
-        <service
-            android:name=".DownloadWorker"
-            android:enabled="true"
-            android:exported="true"></service>
+        android:theme="@style/Theme.Lesson5">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="ru.com.hristov.mireaproject.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
 
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.MireaProject.NoActionBar">
+            android:theme="@style/Theme.MireaProject.NoActionBar"
+            tools:ignore="MissingClass">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
