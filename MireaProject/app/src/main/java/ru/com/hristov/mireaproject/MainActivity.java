@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,
-                R.id.nav_datafragment, R.id.nav_webview, R.id.nav_downloadfragment, R.id.nav_sensor_data, R.id.nav_camera, R.id.nav_microphone, R.id.nav_profile, R.id.nav_cryptography)
+                R.id.nav_datafragment, R.id.nav_webview, R.id.nav_downloadfragment, R.id.nav_sensor_data, R.id.nav_camera, R.id.nav_microphone, R.id.nav_profile, R.id.nav_cryptography, R.id.weatherFragment, R.id.PlacesFragment)
                 .setOpenableLayout(drawer)
                 .build();
 

@@ -48,5 +48,13 @@
             android:id="@+id/nav_cryptography"
             android:icon="@android:drawable/ic_menu_view"
             android:title="Cryptography" />
+        <item
+            android:id="@+id/weatherFragment"
+            android:icon="@android:drawable/ic_menu_mapmode"
+            android:title="Weather" />
+        <item
+            android:id="@+id/PlacesFragment"
+            android:icon="@android:drawable/star_on"
+            android:title="Places" />
     </group>
 </menu>

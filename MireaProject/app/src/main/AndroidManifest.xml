@@ -1,24 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     package="ru.com.hristov.mireaproject">
-
-    <!-- Разрешение на использование интернета -->
     <uses-permission android:name="android.permission.INTERNET" />
-
-    <!-- Разрешение на использование камеры -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
-
-    <!-- Разрешение на запись аудио (использование микрофона) -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
-
-    <!-- Разрешение на доступ к внешнему хранилищу -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
-    <!-- Указание на использование аппаратной камеры -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
     <uses-feature android:name="android.hardware.camera" android:required="true" />
-
-
 
     <application
         android:allowBackup="true"
@@ -26,7 +19,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Lesson5">
+        android:theme="@style/Theme.MireaProject">
 
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -39,17 +32,24 @@
         </provider>
 
         <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.MireaProject.NoActionBar"
-            tools:ignore="MissingClass">
+            android:name=".LoginActivity"
+            android:label="@string/login"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:exported="true"
+            android:theme="@style/Theme.MireaProject.NoActionBar"/>
+
+        <meta-data android:name="org.osmdroid.config.IConfigurationProvider"
+            android:value="org.osmdroid.config.DefaultConfigurationProvider"/>
+
     </application>
 
 </manifest>

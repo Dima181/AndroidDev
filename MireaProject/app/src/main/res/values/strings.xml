@@ -10,6 +10,29 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_datafragment">Data</string>
+    <string name="menu_webviewfragment">Webview</string>
+    <string name="menu_camerafragment">Camera</string>
+    <string name="menu_sensordatafragment">Sensor</string>
+    <string name="menu_microphonefragment">Microphone</string>
+    <string name="preview">Preview</string>
+    <string name="take_photo">Take a photo</string>
+    <string name="hint_description">Enter description...</string>
+    <string name="photo_preview">Preview</string>
+    <string name="create_collage">Create collage</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="save">Save</string>
+    <string name="choose_file">Choose file</string>
+    <string name="encryption_key">Encryption key</string>
+    <string name="encrypt">Encrypt</string>
+    <string name="decrypt">Decrypt</string>
+    <string name="create_new_record">Create new record</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="search_hint">Search Hint</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
@@ -41,5 +37,38 @@
         android:name="ru.com.hristov.mireaproject.DownloadFragment"
         android:label="Download"
         tools:layout="@layout/fragment_download" />
+    <fragment
+        android:id="@+id/nav_sensor_data"
+        android:name="ru.com.hristov.mireaproject.SensorDataFragment"
+        android:label="Sensor Data"
+        tools:layout="@layout/fragment_sensor_data" />
+    <fragment
+        android:id="@+id/nav_camera"
+        android:name="ru.com.hristov.mireaproject.CameraFragment"
+        android:label="Camera"
+        tools:layout="@layout/fragment_camera" />
+    <fragment
+        android:id="@+id/nav_microphone"
+        android:name="ru.com.hristov.mireaproject.MicrophoneFragment"
+        android:label="Microphone"
+        tools:layout="@layout/fragment_microphone" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="ru.com.hristov.mireaproject.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_cryptography"
+        android:name="ru.com.hristov.mireaproject.ui.cryptography.FileCryptographyFragment"
+        android:label="Cryptography"
+        tools:layout="@layout/fragment_file_cryptography" />
+    <fragment
+        android:id="@+id/weatherFragment"
+        android:name="ru.com.hristov.mireaproject.WeatherFragment"
+        android:label="WeatherFragment" />
+    <fragment
+        android:id="@+id/PlacesFragment"
+        android:name="ru.com.hristov.mireaproject.PlacesFragment"
+        android:label="PlacesFragment" />
 
 </navigation>
